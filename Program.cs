@@ -13,22 +13,23 @@ namespace InClass4
             const int numStudents = 5;
             int[] finalExamScores = new int[numStudents];
 
-            // Obter as notas dos exames dos alunos
+            // Get students' exam scores
             GetExamScores(finalExamScores, numStudents);
 
-            // Exibir todas as notas dos exames
+            // Display all exam scores
             DisplayAllExamScores(finalExamScores);
 
-            // Exibir a maior nota do exame e seu índice
+            // Display the highest exam score and its index
             DisplayHighestScore(finalExamScores);
 
-            // Exibir a menor nota do exame e seu índice
+            // Display the lowest exam score and its index
             DisplayLowestScore(finalExamScores);
 
-            // Exibir a média das notas dos exames para a classe
+            // Display the average exam score for the class
             DisplayAverageScore(finalExamScores);
 
-            Console.ReadLine(); // Manter o console aberto até que uma tecla seja pressionada
+            // Keep the console open until a key is pressed
+            Console.ReadKey();
         }
 
         static void GetExamScores(int[] scores, int numStudents)
